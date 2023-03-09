@@ -4,7 +4,7 @@ import sys
 # import json
 
 
-openai.api_key = os.environ['OPENAI_API_KEY']
+openai.api_key = st.secrets['OPENAI_API_KEY']
 
 import openai
 import streamlit as st
