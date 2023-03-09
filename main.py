@@ -1,14 +1,13 @@
 import openai
 import os
 import sys
-# import json
+import streamlit as st
+import numpy as np
 
 
 openai.api_key = st.secrets['OPENAI_API_KEY']
 
-import openai
-import streamlit as st
-import numpy as np
+
 
 # zainicjowanie połączenia z OpenAI API
 
