@@ -65,35 +65,3 @@ if st.button("Zapisz historię wiadomości"):
     with open("historia.txt", "a") as f:
         f.write(user_input + "\n")
     st.write("Wiadomość została zapisana!")
-
-
-
-
-
-
-
-# pytanie = input('Zadaj pytanie')
-# response = openai.ChatCompletion.create(
-#     model="gpt-3.5-turbo",
-#     messages=[
-#         {"role": "system", "content": "Jesteś specjalistą od spraw ecommerce. Potrafisz pisać unikalne opisy produktów.  "},
-#         {"role": "user",
-#          "content":pytanie}
-#     ]
-# )
-#
-# odpowiedz = response['choices'][0]['message']['content']
-# print(response['usage'])
-# print(response['id'])
-# print(response['object'])
-# print(response.keys())
-#
-# with open('pytania_odpowiedzi.json', 'w',encoding='utf-8') as f:
-#     dane = {
-#     "id": 1,
-#     "pytanie": pytanie,
-#     "odpowiedz": odpowiedz
-#     }
-#     json.dump(dane, f, ensure_ascii=False, indent=4)
-#
-# print(f'odpowiedź: {odpowiedz}')
